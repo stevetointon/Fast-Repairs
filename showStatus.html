@@ -1,0 +1,42 @@
+<!--Asa Jacob, Steve Tointon
+	COEN 178
+	Final Project
+	This page accepts a new machine for the database-->
+
+<!-- Will take input from the user regarding the machine-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Enter Customer Info</title>
+
+</head>
+<h1> Please enter the following information to view your order status:</h1>
+<body>
+     <form action="showStatus.php" method="post" >
+        <fieldset>
+			
+
+
+            <!--text field inputs-->
+            <legend style="">Order Information:</legend>
+
+			<!--radio button inputs-->
+            <!--<legend style ="">Search Method:
+            <input type="radio" name="searchMethod" id="searchMethod" value="phoneNo">
+            <label for="searchMethod">Phone Number: </label>
+
+			<input type="radio" name="machineId" id="machineId" value="machineId">
+            <label for="machineId">machineId: </label>-->
+
+            <label for="machineId"> </label>
+            <input type="number" name ="machineId" min="0" step="1" max="300" value="0" id = "machineId">
+
+            
+        </fieldset>
+		<input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+		<input type="button" value="Home" onclick="window.location.href='finalUI.html'" />
+    </form> 
+</html>
